@@ -139,7 +139,7 @@ struct TreeNode* deleteNode(struct TreeNode* root, int value) {
     } else if (value > root->key) {
         root->right = deleteNode(root->right, value);
     } else {
-        // Nó com um ou nenhum filho
+      
         if (root->left == NULL) {
             struct TreeNode* temp = root->right;
             free(root);
